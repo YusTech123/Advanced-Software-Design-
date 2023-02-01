@@ -1,0 +1,24 @@
+int main()
+{
+    float balance;
+    cout << " Please enter your current balance : ";
+    cin >> balance;
+ 
+    cout << "Your balance is: " << balance << endl;
+    
+    float deposit;
+    cout << "Enter deposit amount:\n ";
+    cin >> deposit;
+    balance += deposit;
+    cout << "Your updated balance is: " << balance << endl;
+
+    cout << "Enter withdrawal amount: ";
+    cin >> deposit;
+    if (balance - deposit < 0) {
+        cout << "Insufficient balance" << endl;
+    }
+    else {
+        balance -= deposit;
+        cout << "Your updated balance is: " << balance << endl;
+    }
+   
